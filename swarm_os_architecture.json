@@ -1,0 +1,156 @@
+{
+  "architecture_components": {
+    "Agent Layer (Edge AI)": {
+      "description": "Each agent has a decision-making module for autonomous operation",
+      "components": [
+        "Path planning & obstacle avoidance",
+        "Task scheduling (image capture, data relay, sensor reading)",
+        "TinyML inference engine",
+        "Reinforcement Learning policy network",
+        "Energy monitoring system"
+      ],
+      "technologies": [
+        "PyTorch/TensorFlow Lite",
+        "ONNX Runtime",
+        "CMSIS-NN"
+      ],
+      "power_consumption": "1-50mW per agent",
+      "memory_requirements": "32KB-2MB Flash, 8KB-512KB RAM"
+    },
+    "Communication Layer": {
+      "description": "RLNC-based peer-to-peer resilient communication",
+      "components": [
+        "Random Linear Network Coding encoder/decoder",
+        "Adaptive packet routing",
+        "Fault-tolerant messaging",
+        "Energy-aware transmission scheduling",
+        "Galois field arithmetic engine"
+      ],
+      "technologies": [
+        "Python galois library",
+        "Custom RLNC implementation",
+        "WebRTC"
+      ],
+      "algorithms": [
+        "GF(2^8) arithmetic",
+        "Gaussian elimination",
+        "Network flow optimization"
+      ],
+      "performance": "30+ GiB/s encoding, 1.5 GiB/s decoding"
+    },
+    "Energy & Resource Layer": {
+      "description": "Tracks and optimizes energy consumption dynamically",
+      "components": [
+        "Battery level monitoring",
+        "Energy harvesting coordination",
+        "Dynamic voltage/frequency scaling",
+        "Computational load balancing",
+        "Sleep mode scheduling"
+      ],
+      "metrics": [
+        "Energy per inference (mJ)",
+        "Power efficiency (TOPS/W)",
+        "Battery lifetime"
+      ],
+      "optimization_techniques": [
+        "DVFS",
+        "Clock gating",
+        "Task migration",
+        "Workload prediction"
+      ]
+    },
+    "Mission Layer": {
+      "description": "Defines and coordinates swarm-level objectives",
+      "components": [
+        "Task allocation algorithms",
+        "Formation control",
+        "Consensus protocols",
+        "Mission planning",
+        "Performance evaluation"
+      ],
+      "mission_types": [
+        "Mapping",
+        "Object detection",
+        "Environmental monitoring",
+        "Search & rescue"
+      ],
+      "algorithms": [
+        "Hungarian algorithm",
+        "Ant colony optimization",
+        "Particle swarm optimization"
+      ]
+    },
+    "Visualization & Control": {
+      "description": "Real-time 3D/2D simulation dashboard",
+      "components": [
+        "WebGL-based 3D renderer",
+        "Real-time agent tracking",
+        "Communication link visualization",
+        "Energy consumption charts",
+        "Mission progress monitoring"
+      ],
+      "technologies": [
+        "Three.js",
+        "React.js",
+        "FastAPI",
+        "WebSockets",
+        "D3.js"
+      ],
+      "features": [
+        "Interactive controls",
+        "Real-time updates",
+        "Multi-user support"
+      ]
+    }
+  },
+  "performance_requirements": {
+    "scalability": {
+      "min_agents": 50,
+      "target_agents": 500,
+      "max_agents": 1000,
+      "simulation_frequency": "60 Hz"
+    },
+    "latency": {
+      "inference_latency": "<10ms",
+      "communication_latency": "<50ms",
+      "visualization_update": "<16ms (60 FPS)"
+    },
+    "energy": {
+      "agent_power_budget": "10-100mW",
+      "battery_life": "24+ hours continuous operation",
+      "energy_harvesting": "Solar, RF, vibration"
+    },
+    "reliability": {
+      "packet_delivery_rate": ">95%",
+      "fault_tolerance": "20% agent failure",
+      "mission_success_rate": ">90%"
+    }
+  },
+  "tech_stack": {
+    "Backend": {
+      "framework": "FastAPI",
+      "database": "SQLite/PostgreSQL",
+      "websockets": "FastAPI WebSocket",
+      "simulation": "Python + NumPy + multiprocessing"
+    },
+    "Frontend": {
+      "framework": "React.js + TypeScript",
+      "3d_rendering": "Three.js",
+      "charts": "D3.js + Chart.js",
+      "styling": "Tailwind CSS"
+    },
+    "AI/ML": {
+      "framework": "PyTorch",
+      "optimization": "TensorFlow Lite",
+      "reinforcement_learning": "Stable-Baselines3",
+      "network_coding": "galois library"
+    },
+    "Deployment": {
+      "containerization": "Docker",
+      "orchestration": "Docker Compose",
+      "cloud": "AWS/GCP/Azure",
+      "edge": "Kubernetes Edge"
+    }
+  },
+  "timestamp": "2025-09-04T20:46:13.040236"
+}
