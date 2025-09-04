@@ -1,0 +1,859 @@
+{
+  "agents": [
+    {
+      "agent_id": 0,
+      "position": {
+        "x": 10,
+        "y": 15,
+        "z": 5
+      },
+      "velocity": {
+        "x": -0.9981184833112261,
+        "y": 0.06131470682061136,
+        "z": 0.0
+      },
+      "state": "moving",
+      "energy": {
+        "current": 0.95,
+        "power_consumption": 2.1599999999999993,
+        "harvesting_rate": 5.0
+      },
+      "mission": {
+        "assigned_tasks": 0,
+        "completed_tasks": 0
+      },
+      "performance": {
+        "distance_traveled": 0.15999999999998732,
+        "communications": 10
+      }
+    },
+    {
+      "agent_id": 1,
+      "position": {
+        "x": -33.75789279380605,
+        "y": 10.222704862214028,
+        "z": 3.918175141442103
+      },
+      "velocity": {
+        "x": -0.35081814602375383,
+        "y": -0.9364436066418821,
+        "z": 0.0
+      },
+      "state": "moving",
+      "energy": {
+        "current": 0.884176286484399,
+        "power_consumption": 0.1600000000000122,
+        "harvesting_rate": 5.0
+      },
+      "mission": {
+        "assigned_tasks": 1,
+        "completed_tasks": 0
+      },
+      "performance": {
+        "distance_traveled": 0.15199999999999403,
+        "communications": 0
+      }
+    },
+    {
+      "agent_id": 2,
+      "position": {
+        "x": -34.8010775220748,
+        "y": -14.846428278134129,
+        "z": 3.941740947658409
+      },
+      "velocity": {
+        "x": 1.0637231301374146,
+        "y": -1.0575883426034256,
+        "z": 0
+      },
+      "state": "moving",
+      "energy": {
+        "current": 0.9525801152322076,
+        "power_consumption": 0.23999999999998978,
+        "harvesting_rate": 5.0
+      },
+      "mission": {
+        "assigned_tasks": 0,
+        "completed_tasks": 0
+      },
+      "performance": {
+        "distance_traveled": 0.21599999999999092,
+        "communications": 0
+      }
+    },
+    {
+      "agent_id": 3,
+      "position": {
+        "x": -23.18999240017534,
+        "y": 33.06196995682186,
+        "z": 2.8057630800010958
+      },
+      "velocity": {
+        "x": 0.022752351266115793,
+        "y": -0.9997411317495462,
+        "z": 0.0
+      },
+      "state": "moving",
+      "energy": {
+        "current": 0.8043958307130058,
+        "power_consumption": 0.1599999999999925,
+        "harvesting_rate": 5.0
+      },
+      "mission": {
+        "assigned_tasks": 0,
+        "completed_tasks": 0
+      },
+      "performance": {
+        "distance_traveled": 0.1680000000000042,
+        "communications": 0
+      }
+    },
+    {
+      "agent_id": 4,
+      "position": {
+        "x": 28.554524006078232,
+        "y": 37.62987154885714,
+        "z": 9.671125704547713
+      },
+      "velocity": {
+        "x": -0.3611640939791108,
+        "y": -0.9325022773271108,
+        "z": 0.0
+      },
+      "state": "moving",
+      "energy": {
+        "current": 0.9859668885582751,
+        "power_consumption": 0.15999999999998388,
+        "harvesting_rate": 5.0
+      },
+      "mission": {
+        "assigned_tasks": 0,
+        "completed_tasks": 0
+      },
+      "performance": {
+        "distance_traveled": 0.17599999999999352,
+        "communications": 0
+      }
+    },
+    {
+      "agent_id": 5,
+      "position": {
+        "x": 41.20120429195119,
+        "y": -10.720497730160963,
+        "z": 5.5839526246641356
+      },
+      "velocity": {
+        "x": 0.9862281780246063,
+        "y": -0.16539038929232067,
+        "z": 0.0
+      },
+      "state": "moving",
+      "energy": {
+        "current": 0.751873685199559,
+        "power_consumption": 2.1600000000000033,
+        "harvesting_rate": 5.0
+      },
+      "mission": {
+        "assigned_tasks": 0,
+        "completed_tasks": 0
+      },
+      "performance": {
+        "distance_traveled": 0.14400000000000285,
+        "communications": 10
+      }
+    },
+    {
+      "agent_id": 6,
+      "position": {
+        "x": -4.448618416453669,
+        "y": 10.225996525085954,
+        "z": 5.225043605826842
+      },
+      "velocity": {
+        "x": 0.8119056255399439,
+        "y": -1.2612728710380607,
+        "z": 0
+      },
+      "state": "moving",
+      "energy": {
+        "current": 0.7172208703425231,
+        "power_consumption": 0.24000000000000019,
+        "harvesting_rate": 5.0
+      },
+      "mission": {
+        "assigned_tasks": 1,
+        "completed_tasks": 0
+      },
+      "performance": {
+        "distance_traveled": 0.14400000000000066,
+        "communications": 0
+      }
+    },
+    {
+      "agent_id": 7,
+      "position": {
+        "x": 49.360850486179004,
+        "y": 14.97934750319498,
+        "z": 9.903362733557088
+      },
+      "velocity": {
+        "x": 0.6165431889441441,
+        "y": -0.7873210883537831,
+        "z": 0.0
+      },
+      "state": "moving",
+      "energy": {
+        "current": 0.8950624336322797,
+        "power_consumption": 2.1599999999999846,
+        "harvesting_rate": 5.0
+      },
+      "mission": {
+        "assigned_tasks": 0,
+        "completed_tasks": 0
+      },
+      "performance": {
+        "distance_traveled": 0.03199999999999692,
+        "communications": 10
+      }
+    },
+    {
+      "agent_id": 8,
+      "position": {
+        "x": 2.411926334626657,
+        "y": 24.980738311034706,
+        "z": 4.0406080545269765
+      },
+      "velocity": {
+        "x": 0.6661132716325447,
+        "y": 1.3439840435641295,
+        "z": 0
+      },
+      "state": "moving",
+      "energy": {
+        "current": 0.9463770863726909,
+        "power_consumption": 0.23999999999999033,
+        "harvesting_rate": 5.0
+      },
+      "mission": {
+        "assigned_tasks": 1,
+        "completed_tasks": 0
+      },
+      "performance": {
+        "distance_traveled": 0.17599999999999563,
+        "communications": 0
+      }
+    },
+    {
+      "agent_id": 9,
+      "position": {
+        "x": -21.024970506063948,
+        "y": -39.059908309315965,
+        "z": 3.26805642953207
+      },
+      "velocity": {
+        "x": 0.9998592864170145,
+        "y": 0.01677520091261092,
+        "z": 0.0
+      },
+      "state": "moving",
+      "energy": {
+        "current": 0.8055120232638866,
+        "power_consumption": 2.160000000000015,
+        "harvesting_rate": 5.0
+      },
+      "mission": {
+        "assigned_tasks": 0,
+        "completed_tasks": 0
+      },
+      "performance": {
+        "distance_traveled": 0.04800000000000447,
+        "communications": 10
+      }
+    },
+    {
+      "agent_id": 10,
+      "position": {
+        "x": -49.27497074296339,
+        "y": -27.889828315315295,
+        "z": 6.020090367384377
+      },
+      "velocity": {
+        "x": 0.7339362001504762,
+        "y": 0.6792184141413424,
+        "z": 0.0
+      },
+      "state": "moving",
+      "energy": {
+        "current": 0.8054880417701249,
+        "power_consumption": 0.1600000000000125,
+        "harvesting_rate": 5.0
+      },
+      "mission": {
+        "assigned_tasks": 0,
+        "completed_tasks": 0
+      },
+      "performance": {
+        "distance_traveled": 0.1520000000000059,
+        "communications": 0
+      }
+    },
+    {
+      "agent_id": 11,
+      "position": {
+        "x": 38.88346486003542,
+        "y": 9.670930548931503,
+        "z": 7.894829377470133
+      },
+      "velocity": {
+        "x": 0.047727306018304626,
+        "y": 0.9988604027892162,
+        "z": 0.0
+      },
+      "state": "moving",
+      "energy": {
+        "current": 0.8328433035863259,
+        "power_consumption": 2.1599999999999953,
+        "harvesting_rate": 5.0
+      },
+      "mission": {
+        "assigned_tasks": 0,
+        "completed_tasks": 0
+      },
+      "performance": {
+        "distance_traveled": 0.1440000000000001,
+        "communications": 10
+      }
+    },
+    {
+      "agent_id": 12,
+      "position": {
+        "x": 33.41777127159556,
+        "y": -7.586466121044927,
+        "z": 7.153253772473129
+      },
+      "velocity": {
+        "x": -0.06181940499415851,
+        "y": -0.9980873514708861,
+        "z": 0.0
+      },
+      "state": "moving",
+      "energy": {
+        "current": 0.7649776630226831,
+        "power_consumption": 2.1600000000000006,
+        "harvesting_rate": 5.0
+      },
+      "mission": {
+        "assigned_tasks": 0,
+        "completed_tasks": 0
+      },
+      "performance": {
+        "distance_traveled": 0.11999999999999478,
+        "communications": 10
+      }
+    },
+    {
+      "agent_id": 13,
+      "position": {
+        "x": 17.19108435003706,
+        "y": -43.930067708089794,
+        "z": 9.219170487661575
+      },
+      "velocity": {
+        "x": 0.7262849778550361,
+        "y": 0.6873937233799198,
+        "z": 0.0
+      },
+      "state": "moving",
+      "energy": {
+        "current": 0.8416176799040294,
+        "power_consumption": 0.15999999999999176,
+        "harvesting_rate": 5.0
+      },
+      "mission": {
+        "assigned_tasks": 0,
+        "completed_tasks": 0
+      },
+      "performance": {
+        "distance_traveled": 0.17599999999999388,
+        "communications": 0
+      }
+    },
+    {
+      "agent_id": 14,
+      "position": {
+        "x": 42.8065404071915,
+        "y": -11.077165077759199,
+        "z": 5.200152868083206
+      },
+      "velocity": {
+        "x": -0.7030356138950323,
+        "y": 0.711154642532294,
+        "z": 0.0
+      },
+      "state": "moving",
+      "energy": {
+        "current": 0.7155673694335125,
+        "power_consumption": 2.1599999999999975,
+        "harvesting_rate": 5.0
+      },
+      "mission": {
+        "assigned_tasks": 0,
+        "completed_tasks": 0
+      },
+      "performance": {
+        "distance_traveled": 0.1439999999999976,
+        "communications": 10
+      }
+    },
+    {
+      "agent_id": 15,
+      "position": {
+        "x": 4.044022292952707,
+        "y": 46.22931899981791,
+        "z": 0.2730501756181425
+      },
+      "velocity": {
+        "x": 0.3795529349186615,
+        "y": 1.4511855737963462,
+        "z": 0
+      },
+      "state": "moving",
+      "energy": {
+        "current": 0.9651475935733701,
+        "power_consumption": 2.2399999999999767,
+        "harvesting_rate": 5.0
+      },
+      "mission": {
+        "assigned_tasks": 0,
+        "completed_tasks": 0
+      },
+      "performance": {
+        "distance_traveled": 0.18399999999999142,
+        "communications": 10
+      }
+    },
+    {
+      "agent_id": 16,
+      "position": {
+        "x": 45.24693226643252,
+        "y": -23.773771381834557,
+        "z": 8.985335487293757
+      },
+      "velocity": {
+        "x": 0.9258276094520166,
+        "y": -1.1801877975883177,
+        "z": 0
+      },
+      "state": "moving",
+      "energy": {
+        "current": 0.721613622540395,
+        "power_consumption": 2.240000000000014,
+        "harvesting_rate": 5.0
+      },
+      "mission": {
+        "assigned_tasks": 0,
+        "completed_tasks": 0
+      },
+      "performance": {
+        "distance_traveled": 0.1600000000000196,
+        "communications": 10
+      }
+    },
+    {
+      "agent_id": 17,
+      "position": {
+        "x": 31.420895081847334,
+        "y": 19.352688318401853,
+        "z": 1.4867504612571592
+      },
+      "velocity": {
+        "x": -0.7075680463941166,
+        "y": -0.7066452148865179,
+        "z": 0.0
+      },
+      "state": "moving",
+      "energy": {
+        "current": 0.890357092127049,
+        "power_consumption": 2.160000000000003,
+        "harvesting_rate": 5.0
+      },
+      "mission": {
+        "assigned_tasks": 0,
+        "completed_tasks": 0
+      },
+      "performance": {
+        "distance_traveled": 0.20000000000000048,
+        "communications": 10
+      }
+    },
+    {
+      "agent_id": 18,
+      "position": {
+        "x": -0.5144598928252019,
+        "y": 49.85632494576786,
+        "z": 4.024682040206223
+      },
+      "velocity": {
+        "x": -1.4761169769417972,
+        "y": 0.2666058333649319,
+        "z": 0
+      },
+      "state": "moving",
+      "energy": {
+        "current": 0.9202864179214151,
+        "power_consumption": 2.2400000000000055,
+        "harvesting_rate": 5.0
+      },
+      "mission": {
+        "assigned_tasks": 0,
+        "completed_tasks": 0
+      },
+      "performance": {
+        "distance_traveled": 0.1920000000000048,
+        "communications": 10
+      }
+    },
+    {
+      "agent_id": 19,
+      "position": {
+        "x": 1.3253779278517035,
+        "y": -19.12121144417112,
+        "z": 0.8042210710519737
+      },
+      "velocity": {
+        "x": 0.94709839792929,
+        "y": -0.3209433355590551,
+        "z": 0.0
+      },
+      "state": "moving",
+      "energy": {
+        "current": 0.9241726709086271,
+        "power_consumption": 0.16000000000000286,
+        "harvesting_rate": 5.0
+      },
+      "mission": {
+        "assigned_tasks": 0,
+        "completed_tasks": 0
+      },
+      "performance": {
+        "distance_traveled": 0.1920000000000068,
+        "communications": 0
+      }
+    }
+  ],
+  "obstacles": [
+    {
+      "id": 0,
+      "position": {
+        "x": 1.2508475723665455,
+        "y": -49.215015309724755,
+        "z": 4.269721790900512
+      },
+      "size": 7.133351263339819,
+      "type": "static"
+    },
+    {
+      "id": 1,
+      "position": {
+        "x": -31.011670454892627,
+        "y": 0.13230497185620038,
+        "z": 2.6485784815450444
+      },
+      "size": 2.9285821245236705,
+      "type": "dynamic"
+    },
+    {
+      "id": 2,
+      "position": {
+        "x": -26.159551250486867,
+        "y": -0.7457837716972406,
+        "z": 4.09780845656
+      },
+      "size": 6.5513791606810425,
+      "type": "dynamic"
+    },
+    {
+      "id": 3,
+      "position": {
+        "x": -35.756715799690596,
+        "y": -44.87307032354985,
+        "z": 1.9997081312836622
+      },
+      "size": 3.16284623053798,
+      "type": "static"
+    },
+    {
+      "id": 4,
+      "position": {
+        "x": 35.589416583076286,
+        "y": 12.396272075925673,
+        "z": 3.0797994254519665
+      },
+      "size": 4.2106647488465745,
+      "type": "static"
+    },
+    {
+      "id": 5,
+      "position": {
+        "x": 8.964290805597408,
+        "y": -36.11845160586624,
+        "z": 1.4238673337267826
+      },
+      "size": 5.6301357654451065,
+      "type": "dynamic"
+    },
+    {
+      "id": 6,
+      "position": {
+        "x": 19.75611356310786,
+        "y": 27.944719835515045,
+        "z": 0.5425570944119684
+      },
+      "size": 2.943028785240494,
+      "type": "dynamic"
+    },
+    {
+      "id": 7,
+      "position": {
+        "x": -18.491054721773438,
+        "y": 27.7440439223937,
+        "z": 1.402679233575292
+      },
+      "size": 4.550458263015886,
+      "type": "static"
+    },
+    {
+      "id": 8,
+      "position": {
+        "x": 36.196361819664844,
+        "y": 8.78875688007897,
+        "z": 4.005043580845856
+      },
+      "size": 6.799573053756922,
+      "type": "static"
+    },
+    {
+      "id": 9,
+      "position": {
+        "x": 1.535673392427782,
+        "y": -46.07472508137186,
+        "z": 2.6735017402369863
+      },
+      "size": 5.767981316451565,
+      "type": "static"
+    },
+    {
+      "id": 10,
+      "position": {
+        "x": 4.420877953029503,
+        "y": -32.501564777494295,
+        "z": 1.5972764798657935
+      },
+      "size": 2.5460370105592762,
+      "type": "static"
+    },
+    {
+      "id": 11,
+      "position": {
+        "x": -29.8022535745767,
+        "y": -31.52530488002805,
+        "z": 2.184733979322347
+      },
+      "size": 7.09505234305794,
+      "type": "dynamic"
+    },
+    {
+      "id": 12,
+      "position": {
+        "x": 18.503751517414628,
+        "y": -8.143701266904543,
+        "z": 2.9767181863169823
+      },
+      "size": 6.169200125728558,
+      "type": "static"
+    },
+    {
+      "id": 13,
+      "position": {
+        "x": -9.534087992409553,
+        "y": 43.00834874539619,
+        "z": 4.4771312716491725
+      },
+      "size": 6.118616188487547,
+      "type": "static"
+    },
+    {
+      "id": 14,
+      "position": {
+        "x": 27.90566027992905,
+        "y": -40.62486880981974,
+        "z": 3.4571276805999918
+      },
+      "size": 7.061038323530841,
+      "type": "static"
+    },
+    {
+      "id": 15,
+      "position": {
+        "x": 44.58419517672286,
+        "y": -17.847624135777508,
+        "z": 1.1041668706329222
+      },
+      "size": 3.5972507901442468,
+      "type": "dynamic"
+    },
+    {
+      "id": 16,
+      "position": {
+        "x": 42.64744654058654,
+        "y": 26.761888312489205,
+        "z": 3.827966097745828
+      },
+      "size": 7.541205629846566,
+      "type": "dynamic"
+    },
+    {
+      "id": 17,
+      "position": {
+        "x": 1.7553438292014505,
+        "y": 5.32070146309168,
+        "z": 2.0266122551484105
+      },
+      "size": 4.227746643938829,
+      "type": "static"
+    },
+    {
+      "id": 18,
+      "position": {
+        "x": -37.71055519383207,
+        "y": 35.406506585741695,
+        "z": 3.7562445074636996
+      },
+      "size": 2.4123075242388747,
+      "type": "dynamic"
+    },
+    {
+      "id": 19,
+      "position": {
+        "x": -0.7633555869911959,
+        "y": -2.481675624527135,
+        "z": 4.100681320685968
+      },
+      "size": 2.977937404930522,
+      "type": "dynamic"
+    },
+    {
+      "id": 20,
+      "position": {
+        "x": 36.43093993389958,
+        "y": 11.60075751865621,
+        "z": 2.8396264951668537
+      },
+      "size": 6.940532006072721,
+      "type": "dynamic"
+    },
+    {
+      "id": 21,
+      "position": {
+        "x": 20.698635144630018,
+        "y": 19.28922397201397,
+        "z": 3.2630654817647913
+      },
+      "size": 7.7312984356478545,
+      "type": "dynamic"
+    },
+    {
+      "id": 22,
+      "position": {
+        "x": -24.226935423280572,
+        "y": 39.253634664873104,
+        "z": 3.1238026061935464
+      },
+      "size": 7.156747091269639,
+      "type": "static"
+    }
+  ],
+  "charging_stations": [
+    {
+      "id": 0,
+      "position": {
+        "x": -23.761492482180756,
+        "y": -45.84942599455691,
+        "z": 0
+      },
+      "charging_rate": 37.21620421728974,
+      "capacity": 8
+    },
+    {
+      "id": 1,
+      "position": {
+        "x": -4.7432210974938585,
+        "y": 38.19287865959579,
+        "z": 0
+      },
+      "charging_rate": 38.03353207956304,
+      "capacity": 9
+    },
+    {
+      "id": 2,
+      "position": {
+        "x": -43.907236732616205,
+        "y": 5.323952929427314,
+        "z": 0
+      },
+      "charging_rate": 46.40708581086163,
+      "capacity": 9
+    }
+  ],
+  "active_missions": [
+    {
+      "id": 0,
+      "type": "mapping",
+      "target_area": {
+        "center": {
+          "x": 25.0,
+          "y": 30.0,
+          "z": 5.0
+        },
+        "radius": 15.0
+      },
+      "assigned_agents": [
+        1,
+        8,
+        6
+      ],
+      "status": "active",
+      "created_time": 0.16000000000000003,
+      "completion_progress": 0.0
+    }
+  ],
+  "metrics": {
+    "simulation_time": 0.16000000000000003,
+    "agents": {
+      "total": 20,
+      "active": 20,
+      "failed": 0,
+      "average_energy": 0.853761833729318,
+      "total_distance_traveled": 3.079999999999986
+    },
+    "missions": {
+      "active": 1,
+      "completed": 0,
+      "success_rate": 0.0
+    },
+    "communication": {
+      "total_messages": 110,
+      "total_packets_sent": 110,
+      "total_packets_received": 174,
+      "packet_delivery_rate": 1.5818181818181818,
+      "successful_decodings": 0,
+      "packet_loss_rate": 0.05
+    },
+    "performance": {
+      "energy_efficiency": 5.543908011229363,
+      "task_completion_rate": 0.0,
+      "system_uptime": 1.0
+    }
+  },
+  "simulation_time": 0.16000000000000003
+}
