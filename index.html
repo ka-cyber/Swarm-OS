@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autonomous Edge-Intelligent Swarm OS Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Header -->
+        <header class="dashboard-header">
+            <h1>Autonomous Edge-Intelligent Swarm OS</h1>
+            <div class="system-status">
+                <span class="status-indicator active"></span>
+                <span>System Online</span>
+            </div>
+        </header>
+
+        <!-- Main Dashboard Layout -->
+        <div class="dashboard-main">
+            <!-- Left Control Panel -->
+            <aside class="control-panel">
+                <div class="panel-section">
+                    <h3>Simulation Controls</h3>
+                    <div class="control-group">
+                        <button id="playPauseBtn" class="btn btn--primary">▶ Start</button>
+                        <button id="resetBtn" class="btn btn--secondary">🔄 Reset</button>
+                    </div>
+                    <div class="control-group">
+                        <label class="form-label">Speed: <span id="speedValue">1x</span></label>
+                        <input type="range" id="speedSlider" class="form-control" min="0.1" max="5" step="0.1" value="1">
+                    </div>
+                    <div class="control-group">
+                        <label class="form-label">Agents: <span id="agentCountValue">100</span></label>
+                        <input type="range" id="agentCountSlider" class="form-control" min="50" max="1000" step="10" value="100">
+                    </div>
+                </div>
+
+                <div class="panel-section">
+                    <h3>Mission Management</h3>
+                    <div class="mission-list" id="missionList">
+                        <!-- Dynamic mission items -->
+                    </div>
+                    <button id="createMissionBtn" class="btn btn--outline btn--full-width">+ Create Mission</button>
+                </div>
+
+                <div class="panel-section">
+                    <h3>System Parameters</h3>
+                    <div class="control-group">
+                        <label class="form-label">Communication Range</label>
+                        <input type="range" id="commRangeSlider" class="form-control" min="5" max="50" value="20">
+                    </div>
+                    <div class="control-group">
+                        <label class="form-label">Energy Efficiency</label>
+                        <input type="range" id="energyEffSlider" class="form-control" min="0.5" max="1" step="0.01" value="0.82">
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Center 3D Visualization -->
+            <main class="visualization-area">
+                <div class="viz-header">
+                    <h2>3D Swarm Environment</h2>
+                    <div class="viz-controls">
+                        <button id="toggleGridBtn" class="btn btn--sm">Grid</button>
+                        <button id="toggleTrailsBtn" class="btn btn--sm">Trails</button>
+                        <button id="resetCameraBtn" class="btn btn--sm">Reset View</button>
+                    </div>
+                </div>
+                <div id="threejs-container" class="threejs-container"></div>
+                <div class="viz-legend">
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #32b8c6;"></div>
+                        <span>Active Agents</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #ff5459;"></div>
+                        <span>Low Energy</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #32c832;"></div>
+                        <span>Charging Stations</span>
+                    </div>
+                </div>
+            </main>
+
+            <!-- Right Metrics Panel -->
+            <aside class="metrics-panel">
+                <div class="panel-section">
+                    <h3>Real-time Metrics</h3>
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <span class="metric-label">Active Agents</span>
+                            <span class="metric-value" id="activeAgents">96</span>
+                            <span class="metric-total">/ 100</span>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-label">Avg Energy</span>
+                            <span class="metric-value" id="avgEnergy">73%</span>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-label">Mission Success</span>
+                            <span class="metric-value" id="missionSuccess">89%</span>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-label">Packet Delivery</span>
+                            <span class="metric-value" id="packetDelivery">94%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel-section">
+                    <h3>Selected Agent</h3>
+                    <div id="agentDetails" class="agent-details">
+                        <p class="text-muted">Click an agent to view details</p>
+                    </div>
+                </div>
+
+                <div class="panel-section">
+                    <h3>Communication Stats</h3>
+                    <div class="comm-stats">
+                        <div class="stat-item">
+                            <span>Total Messages:</span>
+                            <span id="totalMessages">1,847</span>
+                        </div>
+                        <div class="stat-item">
+                            <span>RLNC Efficiency:</span>
+                            <span id="rlncEfficiency">94%</span>
+                        </div>
+                        <div class="stat-item">
+                            <span>Network Latency:</span>
+                            <span id="networkLatency">12ms</span>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <!-- Bottom Performance Charts -->
+        <section class="charts-section">
+            <div class="chart-container">
+                <canvas id="energyChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <canvas id="agentsChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <canvas id="missionChart"></canvas>
+            </div>
+        </section>
+    </div>
+
+    <!-- Modal for Mission Creation -->
+    <div id="missionModal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Create New Mission</h3>
+                <button id="closeMissionModal" class="close-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label class="form-label">Mission Type</label>
+                    <select id="missionType" class="form-control">
+                        <option value="mapping">Mapping</option>
+                        <option value="surveillance">Surveillance</option>
+                        <option value="data_collection">Data Collection</option>
+                        <option value="patrol">Patrol</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Priority</label>
+                    <select id="missionPriority" class="form-control">
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+                <p class="text-muted">Click on the 3D environment to set mission location</p>
+            </div>
+            <div class="modal-footer">
+                <button id="cancelMission" class="btn btn--secondary">Cancel</button>
+                <button id="confirmMission" class="btn btn--primary">Create Mission</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
